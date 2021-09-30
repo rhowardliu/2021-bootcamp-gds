@@ -2,8 +2,7 @@ version: '3.0'
 
 services:
   frontend:
-    image: ghcr.io/${{ github.actor }}/bootcamp-gds-frontend:8078abc
-    build: ./frontend
+    image: ghcr.io/rhowardliu/bootcamp-gds-frontend:8078abc53f1dc79e31efd0dc123b940147d8aef9
     command: "npm start"
     environment:
       NODE_ENV: development
@@ -15,8 +14,7 @@ services:
       - 3000:3000
   
   backend:
-    image: ghcr.io/${{ github.actor }}/bootcamp-gds-backend:8078abc
-    build: ./backend
+    image: ghcr.io/rhowardliu/bootcamp-gds-backend:8078abc53f1dc79e31efd0dc123b940147d8aef9
     command: "npm start"
     environment:
       NODE_ENV: development
